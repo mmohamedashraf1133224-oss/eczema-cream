@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>كريم علاج الإكزيما والتقرحات - توصيل لجميع مناطق السعودية</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap');
+
+  :root {
+    --green: #1a6b2f;
+    --green-light: #2d8a44;
+    --green-pale: #e8f5ec;
+    --gold: #c8960c;
+    --gold-light: #f5c842;
+    --dark: #1a1a1a;
+    --gray: #6b7280;
+    --light: #f9fafb;
+    --white: #ffffff;
+    --red: #dc2626;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Tajawal', 'Arial', sans-serif;
+    background: #f5f5f0;
+    color: var(--dark);
+    direction: rtl;
+  }
+
+  /* HEADER BAR */
+  .trust-bar {
+    background: var(--green);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+  .trust-bar span { margin: 0 12px; }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #0d3d1a 0%, #1a6b2f 50%, #236b35 100%);
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.03) 0%, transparent 60%);
+  }
+  .hero-badge {
+    display: inline-block;
+    background: var(--gold);
+    color: white;
+    padding: 6px 20px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 800;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+  }
+  .hero h1 {
+    color: white;
+    font-size: clamp(26px, 5vw, 42px);
+    font-weight: 900;
+    line-height: 1.3;
+    margin-bottom: 12px;
+  }
+  .hero h1 span { color: var(--gold-light); }
+  .hero p {
+    color: rgba(255,255,255,0.85);
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto 24px;
+    line-height: 1.7;
+  }
+  .price-hero {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(255,255,255,0.1);
+    border: 2px solid rgba(255,255,255,0.3);
+    border-radius: 16px;
+    padding: 14px 28px;
+    margin-bottom: 24px;
+  }
+  .price-hero .main-price {
+    font-size: 42px;
+    font-weight: 900;
+    color: var(--gold-light);
+  }
+  .price-hero .label {
+    color: rgba(255,255,255,0.8);
+    font-size: 14px;
+    text-align: right;
+  }
+
+  /* PRODUCT IMAGES */
+  .product-gallery {
+    background: white;
+    padding: 30px 20px;
+  }
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .gallery-grid img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    aspect-ratio: 1;
+    border: 2px solid #e5e7eb;
+    transition: transform 0.2s;
+  }
+  .gallery-grid img:hover { transform: scale(1.03); }
+
+  /* PROBLEM SECTION */
+  .problem-section {
+    background: #fff8f0;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 4px solid var(--gold);
+  }
+  .problem-section h2 {
+    font-size: clamp(20px, 4vw, 32px);
+    font-weight: 900;
+    color: var(--dark);
+    margin-bottom: 8px;
+  }
+  .problem-section p { color: var(--gray); font-size: 15px; margin-bottom: 24px; }
+  .problems-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .problem-card {
+    background: white;
+    border-radius: 12px;
+    padding: 16px 12px;
+    border: 1px solid #fed7aa;
+    font-size: 14px;
+    font-weight: 700;
+    color: #9a3412;
+  }
+  .problem-card .icon { font-size: 28px; display: block; margin-bottom: 6px; }
+
+  /* BENEFITS */
+  .benefits-section {
+    background: var(--green-pale);
+    padding: 40px 20px;
+    text-align: center;
+  }
+  .section-title {
+    font-size: clamp(20px, 4vw, 30px);
+    font-weight: 900;
+    color: var(--green);
+    margin-bottom: 6px;
+  }
+  .section-sub { color: var(--gray); font-size: 14px; margin-bottom: 28px; }
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .benefit-card {
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    border: 2px solid var(--green);
+    text-align: right;
+  }
+  .benefit-card .icon { font-size: 32px; margin-bottom: 10px; display: block; }
+  .benefit-card h3 { font-size: 16px; font-weight: 800; color: var(--green); margin-bottom: 4px; }
+  .benefit-card p { font-size: 13px; color: var(--gray); line-height: 1.5; }
+
+  /* VIDEO SECTION */
+  .video-section {
+    background: #1a1a1a;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  .video-section .section-title { color: white; }
+  .video-section .section-sub { color: #9ca3af; }
+  .video-wrapper {
+    max-width: 480px;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 3px solid var(--gold);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  }
+  .video-wrapper video {
+    width: 100%;
+    display: block;
+  }
+
+  /* PRICING */
+  .pricing-section {
+    background: white;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    max-width: 900px;
+    margin: 24px auto;
+  }
+  .price-card {
+    border-radius: 16px;
+    padding: 20px;
+    border: 2px solid #e5e7eb;
+    position: relative;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .price-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.1); }
+  .price-card.popular {
+    border-color: var(--green);
+    box-shadow: 0 8px 24px rgba(26,107,47,0.2);
+  }
+  .popular-badge {
+    position: absolute;
+    top: -14px;
+    right: 50%;
+    transform: translateX(50%);
+    background: var(--green);
+    color: white;
+    font-size: 12px;
+    font-weight: 800;
+    padding: 4px 16px;
+    border-radius: 50px;
+  }
+  .price-card .qty { font-size: 14px; color: var(--gray); margin-bottom: 6px; font-weight: 700; }
+  .price-card .amount { font-size: 36px; font-weight: 900; color: var(--dark); }
+  .price-card .amount span { font-size: 16px; color: var(--gray); }
+  .price-card .savings {
+    display: inline-block;
+    background: #dcfce7;
+    color: var(--green);
+    font-size: 12px;
+    font-weight: 800;
+    padding: 3px 10px;
+    border-radius: 50px;
+    margin-top: 6px;
+  }
+  .price-card .per-piece { font-size: 13px; color: var(--gray); margin-top: 4px; }
+
+  /* ORDER FORM */
+  .order-section {
+    background: linear-gradient(135deg, var(--green) 0%, #0d3d1a 100%);
+    padding: 50px 20px;
+    text-align: center;
+  }
+  .order-section .section-title { color: white; font-size: clamp(22px, 4vw, 36px); }
+  .order-section .section-sub { color: rgba(255,255,255,0.8); margin-bottom: 30px; }
+  .order-box {
+    background: white;
+    border-radius: 24px;
+    padding: 32px 24px;
+    max-width: 480px;
+    margin: 0 auto;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+  }
+  .form-group {
+    margin-bottom: 16px;
+    text-align: right;
+  }
+  .form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 6px;
+  }
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    font-size: 16px;
+    font-family: 'Tajawal', sans-serif;
+    direction: rtl;
+    outline: none;
+    transition: border-color 0.2s;
+    background: white;
+    color: var(--dark);
+  }
+  .form-group input:focus,
+  .form-group select:focus { border-color: var(--green); }
+
+  .qty-selector {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .qty-btn {
+    flex: 1;
+    min-width: 70px;
+    padding: 12px 8px;
+    border: 2px solid #e5e7eb;
+    border-radius: 10px;
+    background: white;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: var(--dark);
+    text-align: center;
+  }
+  .qty-btn:hover { border-color: var(--green); background: var(--green-pale); }
+  .qty-btn.active { border-color: var(--green); background: var(--green); color: white; }
+  .qty-btn small { display: block; font-size: 11px; font-weight: 500; opacity: 0.8; margin-top: 2px; }
+
+  .order-total {
+    background: var(--green-pale);
+    border-radius: 12px;
+    padding: 14px;
+    margin: 16px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .order-total .label { font-size: 14px; color: var(--gray); font-weight: 700; }
+  .order-total .total { font-size: 26px; font-weight: 900; color: var(--green); }
+
+  .cod-badge {
+    background: #fff7ed;
+    border: 2px dashed var(--gold);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #9a3412;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .submit-btn {
+    width: 100%;
+    padding: 18px;
+    background: linear-gradient(135deg, var(--green-light), var(--green));
+    color: white;
+    border: none;
+    border-radius: 14px;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Tajawal', sans-serif;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 6px 20px rgba(26,107,47,0.4);
+    letter-spacing: 0.5px;
+  }
+  .submit-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(26,107,47,0.5); }
+  .submit-btn:active { transform: translateY(0); }
+
+  /* SOCIAL PROOF */
+  .social-section {
+    background: var(--light);
+    padding: 40px 20px;
+    text-align: center;
+  }
+  .stats-row {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+  }
+  .stat-item .num {
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--green);
+    display: block;
+  }
+  .stat-item .desc { font-size: 13px; color: var(--gray); }
+  .reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .review-card {
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: right;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  .stars { color: var(--gold); font-size: 18px; margin-bottom: 8px; }
+  .review-text { font-size: 14px; color: var(--dark); line-height: 1.6; margin-bottom: 10px; }
+  .reviewer { font-size: 12px; color: var(--gray); font-weight: 700; }
+  .reviewer .city { color: var(--green); }
+
+  /* FORM SECTIONS */
+  .form-section-title {
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--green);
+    margin: 20px 0 12px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--green-pale);
+    text-align: right;
+  }
+  .form-section-title:first-of-type { margin-top: 4px; }
+
+  .req { color: var(--red); }
+
+  .phone-wrapper {
+    display: flex;
+    align-items: center;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: border-color 0.2s;
+    background: white;
+    direction: ltr;
+  }
+  .phone-wrapper:focus-within { border-color: var(--green); }
+  .phone-prefix {
+    background: var(--green-pale);
+    color: var(--green);
+    font-weight: 800;
+    font-size: 14px;
+    padding: 14px 12px;
+    border-left: 2px solid #e5e7eb;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .phone-wrapper input {
+    border: none !important;
+    border-radius: 0 !important;
+    flex: 1;
+    padding: 14px 12px !important;
+    outline: none !important;
+    direction: ltr;
+    text-align: left;
+    font-family: monospace, 'Tajawal', sans-serif;
+    font-size: 16px;
+  }
+  .phone-wrapper input:focus { border-color: transparent !important; }
+
+  /* STICKY FOOTER CTA */
+  .sticky-cta {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--green);
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.2);
+  }
+  .sticky-cta .info { color: white; }
+  .sticky-cta .info .price { font-size: 22px; font-weight: 900; }
+  .sticky-cta .info .sub { font-size: 12px; opacity: 0.8; }
+  .sticky-cta a {
+    background: var(--gold);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 900;
+    text-decoration: none;
+    font-family: 'Tajawal', sans-serif;
+    transition: background 0.2s;
+    white-space: nowrap;
+  }
+  .sticky-cta a:hover { background: var(--gold-light); color: var(--dark); }
+
+  /* FOOTER */
+  footer {
+    background: var(--dark);
+    color: rgba(255,255,255,0.5);
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    padding-bottom: 80px;
+  }
+
+  /* SUCCESS */
+  .success-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 200;
+    align-items: center;
+    justify-content: center;
+  }
+  .success-overlay.show { display: flex; }
+  .success-box {
+    background: white;
+    border-radius: 24px;
+    padding: 40px;
+    text-align: center;
+    max-width: 380px;
+    margin: 20px;
+  }
+  .success-box .icon { font-size: 64px; }
+  .success-box h2 { font-size: 24px; font-weight: 900; color: var(--green); margin: 12px 0 8px; }
+  .success-box p { color: var(--gray); font-size: 14px; line-height: 1.6; }
+
+  @media (max-width: 480px) {
+    .gallery-grid { grid-template-columns: 1fr 1fr; }
+    .gallery-grid img:last-child { grid-column: 1 / -1; max-width: 200px; margin: 0 auto; }
+    .stats-row { gap: 20px; }
+    .stat-item .num { font-size: 28px; }
+    .sticky-cta { padding: 12px 16px; }
+    .sticky-cta .info .price { font-size: 18px; }
+    .sticky-cta a { padding: 10px 16px; font-size: 13px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Trust Bar -->
+<div class="trust-bar">
+  <span>🚚 توصيل لجميع مناطق السعودية</span>
+  <span>💳 الدفع عند الاستلام</span>
+  <span>✅ ضمان رضا العميل</span>
+</div>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-badge">🌿 تركيبة طبيعية آمنة للبشرة الحساسة</div>
+  <h1>وداعًا للحكة والتقرحات<br><span>من أول استخدام</span></h1>
+  <p>كريم متخصص لعلاج الإكزيما والتهيجات الجلدية، يهدئ البشرة المتهيجة ويقلل الاحمرار بشكل ملحوظ</p>
+  <div class="price-hero">
+    <div>
+      <div class="main-price">79 ر.س</div>
+    </div>
+    <div class="label">
+      للقطعة الواحدة<br>
+      <span style="color:#86efac;">+ توصيل 30 ر.س</span>
+    </div>
+  </div>
+  <a href="#order" style="display:inline-block;background:var(--gold);color:white;padding:16px 40px;border-radius:50px;font-size:18px;font-weight:900;text-decoration:none;box-shadow:0 6px 24px rgba(200,150,12,0.5);">اطلب الآن ⬇️</a>
+</section>
+
+<!-- Product Gallery -->
+<section class="product-gallery">
+  <div class="gallery-grid">
+    <img src="images/product-1.jpg" alt="كريم الإكزيما - الواجهة الأمامية">
+    <img src="images/product-2.jpg" alt="كريم الإكزيما - الطقم الكامل">
+    <img src="images/product-3.jpg" alt="كريم الإكزيما - المكونات">
+  </div>
+</section>
+
+<!-- Problem Section -->
+<section class="problem-section">
+  <h2>هل تعاني من واحدة من هذه المشاكل؟</h2>
+  <p>ملايين الأشخاص يعانون من مشاكل الجلد هذه كل يوم</p>
+  <div class="problems-grid">
+    <div class="problem-card"><span class="icon">🔥</span>الحكة المستمرة</div>
+    <div class="problem-card"><span class="icon">🔴</span>الاحمرار والتهيج</div>
+    <div class="problem-card"><span class="icon">💧</span>جفاف الجلد</div>
+    <div class="problem-card"><span class="icon">🩹</span>التقرحات الجلدية</div>
+    <div class="problem-card"><span class="icon">🌡️</span>الإكزيما المزمنة</div>
+    <div class="problem-card"><span class="icon">👶</span>بشرة الأطفال الحساسة</div>
+  </div>
+</section>
+
+<!-- Benefits -->
+<section class="benefits-section">
+  <h2 class="section-title">ليش كريم الإكزيما هو الحل؟</h2>
+  <p class="section-sub">تركيبة علمية مدروسة لنتائج سريعة وآمنة</p>
+  <div class="benefits-grid">
+    <div class="benefit-card">
+      <span class="icon">⚡</span>
+      <h3>نتيجة من أول استخدام</h3>
+      <p>تشعر بتهدئة فورية للحكة والاحمرار عند أول تطبيق</p>
+    </div>
+    <div class="benefit-card">
+      <span class="icon">🌿</span>
+      <h3>تركيبة طبيعية آمنة</h3>
+      <p>مكونات لطيفة على البشرة الحساسة ومناسبة لجميع الأعمار</p>
+    </div>
+    <div class="benefit-card">
+      <span class="icon">👨‍👩‍👧</span>
+      <h3>للعائلة كلها</h3>
+      <p>آمن للأطفال والكبار والبشرة الحساسة جداً</p>
+    </div>
+    <div class="benefit-card">
+      <span class="icon">🔬</span>
+      <h3>مختبر ومعتمد</h3>
+      <p>تركيبة مدروسة ومختبرة للحصول على أفضل النتائج</p>
+    </div>
+  </div>
+</section>
+
+<!-- Video Section -->
+<section class="video-section">
+  <h2 class="section-title" style="margin-bottom:6px;">شوف النتيجة بنفسك</h2>
+  <p class="section-sub" style="margin-bottom:20px;">فيديو حقيقي للمنتج</p>
+  <div class="video-wrapper">
+    <video controls playsinline>
+      <source src="video-web.mp4" type="video/mp4">
+    </video>
+  </div>
+</section>
+
+<!-- Pricing -->
+<section class="pricing-section">
+  <h2 class="section-title">اختار العرض المناسب ليك</h2>
+  <p class="section-sub">كل ما اشتريت أكثر، كل ما وفرت أكثر 💰</p>
+  <div class="pricing-grid">
+    <div class="price-card">
+      <div class="qty">قطعة واحدة</div>
+      <div class="amount">79 <span>ر.س</span></div>
+      <div class="per-piece">79 ر.س للقطعة</div>
+    </div>
+    <div class="price-card popular">
+      <div class="popular-badge">⭐ الأكثر طلبًا</div>
+      <div class="qty">قطعتان</div>
+      <div class="amount">139 <span>ر.س</span></div>
+      <div class="savings">وفر 19 ر.س</div>
+      <div class="per-piece">69.5 ر.س للقطعة</div>
+    </div>
+    <div class="price-card">
+      <div class="qty">3 قطع</div>
+      <div class="amount">199 <span>ر.س</span></div>
+      <div class="savings">وفر 38 ر.س</div>
+      <div class="per-piece">66.3 ر.س للقطعة</div>
+    </div>
+    <div class="price-card">
+      <div class="qty">4 قطع</div>
+      <div class="amount">259 <span>ر.س</span></div>
+      <div class="savings">وفر 57 ر.س</div>
+      <div class="per-piece">64.7 ر.س للقطعة</div>
+    </div>
+    <div class="price-card">
+      <div class="qty">5 قطع</div>
+      <div class="amount">319 <span>ر.س</span></div>
+      <div class="savings">وفر 76 ر.س</div>
+      <div class="per-piece">63.8 ر.س للقطعة</div>
+    </div>
+  </div>
+  <p style="font-size:13px;color:var(--gray);margin-top:8px;">+ رسوم التوصيل 30 ر.س على الطلب (بغض النظر عن الكمية)</p>
+</section>
+
+<!-- Social Proof -->
+<section class="social-section">
+  <h2 class="section-title">+1,000 عميل سعودي جربوه وأكدوا النتيجة ⭐</h2>
+  <p class="section-sub" style="margin-bottom:24px;">آراء حقيقية من عملاء من مختلف مناطق المملكة</p>
+  <div class="stats-row">
+    <div class="stat-item"><span class="num">+1000</span><span class="desc">طلب مكتمل</span></div>
+    <div class="stat-item"><span class="num">4.9★</span><span class="desc">متوسط التقييم</span></div>
+    <div class="stat-item"><span class="num">98%</span><span class="desc">رضا العملاء</span></div>
+  </div>
+  <div class="reviews-grid">
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p class="review-text">"جربت كريمات كثيرة للإكزيما وهذا أفضلها بكثير. الحكة راحت في أول استخدام والاحمرار خف بشكل واضح خلال يومين فقط."</p>
+      <div class="reviewer">أم فهد · <span class="city">الرياض</span></div>
+    </div>
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p class="review-text">"ابني عنده إكزيما من صغره وما لقينا حل. هذا الكريم ساعده كثيراً، البشرة صارت أنعم ومافي حكة ولا بكاء."</p>
+      <div class="reviewer">أم عبدالله · <span class="city">جدة</span></div>
+    </div>
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p class="review-text">"سعر ممتاز والنتيجة أكثر من ممتازة. اشتريت 3 قطع وأعطيت أختي ووالدتي وكلهم راضيين. الشحن وصل بسرعة."</p>
+      <div class="reviewer">سارة العتيبي · <span class="city">الدمام</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Order Form -->
+<section class="order-section" id="order">
+  <h2 class="section-title">اطلب الآن 🛒</h2>
+  <p class="section-sub">الدفع عند الاستلام · توصيل لجميع مناطق السعودية</p>
+  
+  <div class="order-box">
+    <div class="cod-badge">
+      💳 الدفع عند الاستلام · لا تحتاج بطاقة بنكية
+    </div>
+
+    <!-- Section: بيانات العميل -->
+    <div class="form-section-title">👤 بيانات العميل</div>
+
+    <div class="form-group">
+      <label>الاسم بالكامل <span class="req">*</span></label>
+      <input type="text" id="name" placeholder="أدخل اسمك الكامل" required>
+    </div>
+
+    <div class="form-group">
+      <label>رقم المحمول (بالأرقام الإنجليزية) <span class="req">*</span></label>
+      <div class="phone-wrapper">
+        <span class="phone-prefix">+966</span>
+        <input type="tel" id="phone" placeholder="5xxxxxxxx" maxlength="9" required>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>الرقم البديل (بالأرقام الإنجليزية)</label>
+      <div class="phone-wrapper">
+        <span class="phone-prefix">+966</span>
+        <input type="tel" id="phone2" placeholder="5xxxxxxxx" maxlength="9">
+      </div>
+    </div>
+
+    <!-- Section: بيانات الشحن -->
+    <div class="form-section-title">🚚 بيانات الشحن</div>
+
+    <div class="form-group">
+      <label>المحافظة <span class="req">*</span></label>
+      <select id="region" required>
+        <option value="">اختر المنطقة</option>
+        <option>منطقة الرياض</option>
+        <option>منطقة مكة المكرمة</option>
+        <option>منطقة المدينة المنورة</option>
+        <option>المنطقة الشرقية</option>
+        <option>منطقة القصيم</option>
+        <option>منطقة عسير</option>
+        <option>منطقة تبوك</option>
+        <option>منطقة حائل</option>
+        <option>منطقة الجوف</option>
+        <option>منطقة الحدود الشمالية</option>
+        <option>منطقة جازان</option>
+        <option>منطقة نجران</option>
+        <option>منطقة الباحة</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>العنوان بالتفصيل <span class="req">*</span></label>
+      <input type="text" id="address" placeholder="الحي، الشارع، رقم المبنى..." required>
+    </div>
+
+    <div class="form-group">
+      <label>العنوان الوطني السعودي</label>
+      <input type="text" id="national-address" placeholder="مثال: ABCD1234">
+    </div>
+
+    <div class="form-group">
+      <label>ملاحظات إضافية</label>
+      <textarea id="notes" placeholder="أي تفاصيل إضافية تساعد في التوصيل أو ملاحظات خاصة بطلبك..." rows="3" style="width:100%;padding:14px 16px;border:2px solid #e5e7eb;border-radius:12px;font-size:15px;font-family:'Tajawal',sans-serif;direction:rtl;outline:none;resize:vertical;transition:border-color 0.2s;color:var(--dark);background:white;"></textarea>
+    </div>
+
+    <!-- Section: الكمية -->
+    <div class="form-section-title">🛍️ اختر الكمية</div>
+
+    <div class="form-group">
+      <div class="qty-selector">
+        <button class="qty-btn active" onclick="selectQty(this, 1, 79)">
+          1 قطعة<small>79 ر.س</small>
+        </button>
+        <button class="qty-btn" onclick="selectQty(this, 2, 139)">
+          2 قطع<small>139 ر.س ⭐</small>
+        </button>
+        <button class="qty-btn" onclick="selectQty(this, 3, 199)">
+          3 قطع<small>199 ر.س</small>
+        </button>
+        <button class="qty-btn" onclick="selectQty(this, 5, 319)">
+          5 قطع<small>319 ر.س</small>
+        </button>
+      </div>
+    </div>
+    
+    <div class="order-total">
+      <span class="label">إجمالي الطلب (شامل التوصيل):</span>
+      <span class="total" id="total-display">109 ر.س</span>
+    </div>
+    
+    <button class="submit-btn" onclick="submitOrder()">
+      ✅ أكد طلبي الآن
+    </button>
+    
+    <p style="font-size:12px;color:var(--gray);margin-top:12px;text-align:center;">
+      سيتواصل معك أحد ممثلينا لتأكيد الطلب وتحديد موعد التوصيل
+    </p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>جميع الحقوق محفوظة © 2025 · كريم علاج الإكزيما والتقرحات</p>
+  <p style="margin-top:6px;">للاستفسار والدعم تواصل معنا عبر الواتساب</p>
+</footer>
+
+<!-- Sticky CTA -->
+<div class="sticky-cta">
+  <div class="info">
+    <div class="price">79 ر.س</div>
+    <div class="sub">+ 30 ر.س توصيل · دفع عند الاستلام</div>
+  </div>
+  <a href="#order">اطلب الآن 🛒</a>
+</div>
+
+<!-- Success Overlay -->
+<div class="success-overlay" id="successOverlay">
+  <div class="success-box">
+    <div class="icon">✅</div>
+    <h2>تم استلام طلبك!</h2>
+    <p>شكراً لك! سيتواصل معك أحد ممثلينا قريباً لتأكيد طلبك وتحديد موعد التوصيل.</p>
+    <button onclick="document.getElementById('successOverlay').classList.remove('show')" 
+      style="margin-top:20px;padding:12px 32px;background:var(--green);color:white;border:none;border-radius:50px;font-size:16px;font-weight:800;cursor:pointer;font-family:'Tajawal',sans-serif;">
+      حسناً ✓
+    </button>
+  </div>
+</div>
+
+<script>
+  let currentQty = 1;
+  let currentPrice = 79;
+
+  function selectQty(btn, qty, price) {
+    document.querySelectorAll('.qty-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentQty = qty;
+    currentPrice = price;
+    document.getElementById('total-display').textContent = (price + 30) + ' ر.س';
+  }
+
+  function submitOrder() {
+    const name = document.getElementById('name').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const phone2 = document.getElementById('phone2').value.trim();
+    const region = document.getElementById('region').value;
+    const address = document.getElementById('address').value.trim();
+    const nationalAddr = document.getElementById('national-address').value.trim();
+    const notes = document.getElementById('notes').value.trim();
+
+    if (!name) { alert('من فضلك أدخل اسمك الكامل'); return; }
+    if (!phone || phone.length < 9) { alert('من فضلك أدخل رقم جوال سعودي صحيح (9 أرقام بعد +966)'); return; }
+    if (!region) { alert('من فضلك اختر المنطقة'); return; }
+    if (!address) { alert('من فضلك أدخل العنوان بالتفصيل'); return; }
+
+    const total = currentPrice + 30;
+    let msg = `🛒 *طلب جديد - كريم الإكزيما*\n`;
+    msg += `━━━━━━━━━━━━━━━\n`;
+    msg += `👤 *بيانات العميل*\n`;
+    msg += `الاسم: ${name}\n`;
+    msg += `الجوال: +966${phone}\n`;
+    if (phone2) msg += `الرقم البديل: +966${phone2}\n`;
+    msg += `\n🚚 *بيانات الشحن*\n`;
+    msg += `المنطقة: ${region}\n`;
+    msg += `العنوان: ${address}\n`;
+    if (nationalAddr) msg += `العنوان الوطني: ${nationalAddr}\n`;
+    if (notes) msg += `ملاحظات: ${notes}\n`;
+    msg += `\n🛍️ *تفاصيل الطلب*\n`;
+    msg += `الكمية: ${currentQty} قطعة\n`;
+    msg += `سعر المنتج: ${currentPrice} ر.س\n`;
+    msg += `التوصيل: 30 ر.س\n`;
+    msg += `━━━━━━━━━━━━━━━\n`;
+    msg += `💰 *الإجمالي: ${total} ر.س*\n`;
+    msg += `💳 الدفع عند الاستلام`;
+
+    const encodedMsg = encodeURIComponent(msg);
+    window.open(`https://wa.me/201096994505?text=${encodedMsg}`, '_blank');
+    document.getElementById('successOverlay').classList.add('show');
+  }
+
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      document.querySelector(a.getAttribute('href'))?.scrollIntoView({behavior:'smooth'});
+    });
+  });
+</script>
+</body>
+</html>
